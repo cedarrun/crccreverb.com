@@ -13,7 +13,7 @@ def about(name=None):
 def believe(name=None):
   return render_template('general/believe.html', name=name)
 
-@mod.route('calendar')
+@mod.route('/calendar')
 def calendar(name=None):
   return render_template('general/calendar.html', name=name)
 
