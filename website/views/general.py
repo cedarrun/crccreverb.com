@@ -28,4 +28,3 @@ def pictures (name=None):
 @mod.route('/team')
 def team(name=None):
   return render_template('general/team.html', name=name)
-
