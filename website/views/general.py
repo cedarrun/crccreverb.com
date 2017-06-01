@@ -13,9 +13,17 @@ def about(name=None):
 def believe(name=None):
   return render_template('general/believe.html', name=name)
 
+@mod.route('calendar')
+def calendar(name=None):
+  return render_template('general/calendar.html', name=name)
+
 @mod.route('/contact')
 def contact(name=None):
   return render_template('general/contact.html', name=name)
+
+@mod.route('/pictures')
+def pictures (name=None):
+  return render_template('general/pictures.html',name=name)
 
 @mod.route('/team')
 def team(name=None):
